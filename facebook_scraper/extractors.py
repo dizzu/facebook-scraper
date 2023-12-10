@@ -1286,7 +1286,7 @@ class PostExtractor:
         if not elem:
             logger.error("No comments area found")
             return
-        comments_selector = 'div[data-sigil="comment"]'
+        comments_selector = 'div[class="_14ye"]'
         if self.options.get("noscript"):
             comments_selector = f"{comments_area_selector}>div>div:not(id)>div"
         comments = list(elem.find(comments_selector))
